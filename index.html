@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Car Price Prediction</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#!">Car Price Prediction</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#why">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#machine learning">Our Models</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">Creators</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header - set the background image for the header in the line below-->
+        <header class="py-5 bg-image-full" style="background-image: url('https://images.pond5.com/forest-road-cartoon-footage-186165507_iconl.jpeg')">
+            <div class="text-center my-5">
+                <img class="img-fluid rounded-circle mb-4" src="https://c.tenor.com/UbO6S_5WO0YAAAAC/pug-puglie.gif" alt="Dancing Shrimp holding Beers" />
+                <h1 class="text-white fs-3 fw-bolder">Used Car Dataset</h1>
+                <p class="text-white-50 mb-0">No cars were harmed in the making of this website</p>
+            </div>
+        </header>
+        <!-- Content section-->
+        <section id = "why" class="py-5">
+            <div class="container my-5">
+                <div class = "row justify-content-center">
+                    <div class="col-lg-6">
+                      </div>
+                   <h2>Why did we make this website?</h2>
+                        <p class="mb-0">We want to improve the hard and stressful process of purchasing a car by helping people make informed and right decisions when it comes to buying a car. To do so, our model will take the user’s input on specific car characteristics and predict a selling price based on the given information, this allows consumers to buy a suitable car for themselves that is also within their budget. </p>
+                      <br>                    
+                  <div class="col-lg-6">
+                    <br>
+                      </div>
+                               <h2>Cleaning Data Process</h2>
+                      <p class="mb-0"> By receiving advice from experienced coders and some trial and error when scanning through our data, the team was able to identify and correct data that was unclear, unnecessary, and negatively impacted our project. Cleaning our data was necessary for the success of our project because the raw untouched data contained incorrect and missing rows of data which can lead to many inaccuracies when turned into a model. By cleaning our data, we can prevent these errors from occurring, therefore making our model present accurate information instead.    </p>
+                   <div class="col-lg-6">
+                    <br>
+                      </div>
+                       <h2>Removing Outliers</h2>
+                      <p class="mb-0">In our scatter plot in which we input two variables that might show correlation there unfortunately was some numbers that skewed our results and just made the graph unappealing. Since these outliers are highly unnecessary due to them having a high probability of being an error and also making the graph look less aesthetically pleasing, we removed any values that were abnormal compared to a specific amount. </p>
+                  <br>
+                  <div class="col-lg-6">
+                    <br>
+                      </div>
+                      <h2>Exploration of data</h2>
+                        <p class="mb-0"> We made use of a used car dataset and a library that helped us train the AI in making as correct a prediction as possible. We used many graphs and charts to visualize the data we have collected. </p>
+                   <div class="col-lg-6">
+                    <br>
+                      </div>
+                      <h2> Scatter plot: </h2>
+                      <iframe width="1000" height="600" title="km_driven vs selling_price" src="scatterplot_1.html"></iframe>
+                  <br>
+                  <iframe width="1000" height="600" title="km_driven vs selling_price" src="scatterplot_2.html"></iframe>
+                  <br>
+                  <iframe width="1000" height="600" title="km_driven vs selling_price" src="scatterplot_3.html"></iframe>
+
+                      <p class="mb-0">  The first scatter plot displays the relationship between a car's selling price and its kilometers driven. As you can see the more a car has been driven the less money it is sold for. The second scatter plot displays the relationship between the car's selling price and its max power. The higher a car's max power is, the higher it sells for. Finally, the third scatter plot displays the relationship between a car's selling price and engine.</p>
+                      <br>
+                  <div class="col-lg-6">
+                    <br>
+                      </div>
+                      <h2> Box plot: </h2>
+                      <iframe width="1200" height="600" title="boxplot" src="boxplot_1.html"></iframe>
+                      <p class="mb-0">  The box plot shows the relationship between the various car brands and the selling price. The lines inside each of the boxes represent the median of where the prices usually fall under for each brand. The dots outside of the boxes represent the outliers of the dataset outside of the average selling price for the car brand.</p>
+                  <div>
+                      <br>
+                      <br>
+                      <br>
+                      <h2> Bar Graph: </h2>
+                      <p class="mb-0">  The bar graph shows the individual brands of cars and their average prices. The data is varied and has many highs and lows. </p>
+                    <iframe width="1000" height="1000" title="bargraph"  src="https://cocalc8.ai-camp.dev/eaefe903-a194-47ea-bdfd-e026bc39a894/raw/.smc/jupyter/blobs/a.png?sha1=a62e2c1682c6674d401c20a9973fa98d8cf0600c&attempts=0">
+                    </iframe>
+                      <br>
+                      <h2> Pie Chart: </h2>
+                  <iframe width="1200" height="600" title="cars in dataset" src="piechart_1.html"></iframe>
+                      <p class="mb-0">  The pie chart displays the percentage of cars that are represented in the dataset. For example, the car brands Maruti and Hyundai appear the most frequently in the dataset and therefore have the highest percentages. </p>
+                      <br>
+                      <h2> Correlation Matrix: </h2>
+                    <iframe width="1200" height="600" title="corr matrix" src="corr_Matrix_1.html"></iframe>
+                      <p class="mb-0">  The plot shows the relationship between two variables. If the relationship between the two variables has positive value, it means they have a positive relationship. If the relationship is negative, the variables have a negative relationship.The most positive or negative values in the correlation matrix means is the stronger relationship the variables have. </p>
+                      <br>
+
+                      <h2> Histogram: </h2>
+                    <iframe width="1200" height="600" title="car count" src="histogram_1.html"></iframe>
+                      <p class="mb-0">  This graph shows the amount of cars sold proportional to the year the car was manufactured. The trend is that the more recent the car was manufactured, the better it will sell. </p>
+                      <br>
+                      <h2 id = "machine learning"> Regression Modeling: </h2>
+                      <p class="mb-0">  The regression model helps us understand how our AI will predict where the prices will go in accordance to our data. It gives the AI the proper correlation and predictions. The scatter plot is the result of the machine learning algorithm. It compared max power to selling price. The split we used was an 80 to 20 split. In our regression models, we used a couple different methods to measure our data. We used mean absolute error (MAE), mean squared error (MSE), and root mean squared error (RMS). The MAE is the average value of difference between the predicted answer and the correct answer. The MSE is the amount of error in the model. The RMS is the standard deviation of the data points. In our models the numbers are inflated due to the dataset having large numbers for datapoints. </p>
+                      <br>
+                    <h4> Linear Regression </h4>
+                    <p class="mb-0">  For the linear regression model, we got a mean absolute error of 67592.601, mean squared error of 3706721585.309, and a root mean squared error of 60882.851. </p>
+                     <iframe width="650" height="350" title="linear regression" src="https://cocalc8.ai-camp.dev/eaefe903-a194-47ea-bdfd-e026bc39a894/raw/.smc/jupyter/blobs/a.png?sha1=4c46bfd26682d75c15e4f8ce37feccc9e8de3116&attempts=0"></iframe>
+                      <br>
+                    <h4> Ridge Regression </h4>
+                    <p class="mb-0"> For the ridge regression model, we got a mean absolute value of 67592.597, mean squared error of 3706721775.944, and a root mean squared error of 60882.853. </p>
+                     <iframe width="650" height="350" title="linear regression" src="https://cocalc8.ai-camp.dev/eaefe903-a194-47ea-bdfd-e026bc39a894/raw/.smc/jupyter/blobs/a.png?sha1=d86735b12b3b8de2b2f8bf43a417ce974a9b1bc6&attempts=0"></iframe>
+                    <br>
+                    <h4> Decision Tree </h4>
+                    <p class="mb-0"> For the ridge regression model, we got a mean absolute value of 15104.545, mean squared error of 905637828.458, and a root mean squared error of 30093.817. This turned out to be the best model we made. </p>
+                    <br>
+                    <iframe width="650" height="612" title="linear regression" src="https://media.istockphoto.com/vectors/decision-tree-icon-vector-id1094185438?k=20&m=1094185438&s=612x612&w=0&h=GoRnJsnDrkWZXPPTiJojusC_UGP1aVT1g-rO4rUKrzM="></iframe>
+                    <br>
+                      <h2> Classification Modeling: </h2>
+                      <p class="mb-0">  This type of model will attempt to draw a conclusion from our inputs from the Used Car Data set that we have chosen. This essentially gives the AI values to understand and train under. This form of model can only accept things that are ultimately defined such as True or False, or if a car is sold or not sold. In the end, our classification models did not do too well. For example, for our SVC, Random Forest Classifier, and Logistic Regression models, the accuracy scores were about 50% accurate. </p>
+                    <br>
+                      <h2> Confusion Matrix: </h2>
+                    <iframe width="1200" height="450" title="Confusion Matrix"  src="https://cocalc8.ai-camp.dev/eaefe903-a194-47ea-bdfd-e026bc39a894/raw/final_project/Used%20Car%20Data%20Set/startbootstrap-full-width-pics-gh-pages/3%20models%20pic.jpg">
+                    </iframe>
+                      <p class="mb-0">  This chart shows out results from our machine learning algorithm. The boxes each have their own individual use. The top left is true positive and the bottom right is true negative. These are the boxes we want the numbers in. Each number is a data point that the algorithm got correct. The other boxes are the number of wrong data points. this is where we want to have the least amount of numbers. </p>
+                      <br>
+                      <h2> Results and Conclusion: </h2>
+                      <p class="mb-0">  From our regression modeling to predict selling car prices, we found that the decision tree regressor was the best model, obtaining the lowest MSE, MAE, and RMS. From our classification modeling to predict whether a car is sold or not, all of our models were not very effective as they only had accuracy scores of 50%. In full honesty, we had a great time making this and we have learned quite a lot from this experience. I hope that you will as well with our inference towards Car Prices to help further our own understanding of AI. To help others understand what they are going to buy our product is great to help since people sometimes wish for an easier way to find a car that is right for them. </p>
+                      <br>
+                    <br>
+                      <h2> Why does this matter: </h2>
+                      <p class="mb-0">  This project can help people who need a used car for a good price. The car model shows how much each type of car would usually cost depending on the cars state at the time. It can fit the individual's specific needs and can help people in their own specific situation. </p> 
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Image element - set the background image for the header in the line below-->
+        <!-- Content section-->
+        <section id = 'about' class="py-5">
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                      <iframe width="300" height="260" title="happy_car" src="https://static.jam.vg/raw/a87/72/z/450c5.gif"></iframe>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+      <section style="margin-left: 80px; margin-right: 80px;" id="team">
+        <header class="bg-dark text-center py-5 mb-4">
+            <div class="container px-6">
+              <h1 class="fw-light text-white">Meet the Circuit Breakers</h1>
+            </div>
+          </header>
+          
+          <!-- Page Content -->
+          <div class="container px-4">
+            <div class="row">
+              <!-- Team Member 1 -->
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-0 shadow">
+                  <img src="gabe.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-center">
+                    <h5 class="card-title mb-0">Gabriel Diego</h5>
+                    <div class="card-text text-black-50">To the Aether </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Team Member 2 -->
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-0 shadow">
+                  <img src="David pic3.jpg" height="330" class="card-img-top" alt="...">
+                  <div class="card-body text-center">
+                    <h5 class="card-title mb-0">David Vaca</h5>
+                    <div class="card-text text-black-50">:) </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Team Member 3 -->
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-0 shadow">
+                  <img src="IMG_2582.png" height="350" class="card-img-top" alt="...">
+                  <div class="card-body text-center">
+                    <h5 class="card-title mb-0">Ryan Schulman</h5>
+                 
+                    <div class="card-text text-black-50">:)</div>
+                  </div>
+                </div>
+              </div>
+              <!-- Team Member 4 -->
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-0 shadow">
+                  <img src="picoframon.jpg" height="250" class="card-img-top" alt="...">
+                  <div class="card-body text-center">
+                    <h5 class="card-title mb-0">Ramon Grijalva</h5>
+                    <div class="card-text text-black-50">>:D</div>
+                  </div>
+                </div>
+              </div>
+              <!-- Team Member 5 -->
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-0 shadow">
+                  <img src="me pic.jpg" height="250" class="card-img-top" alt="...">
+                  <div class="card-body text-center">
+                    <h5 class="card-title mb-0">Michelle Trinh</h5>
+                    <div class="card-text text-black-50"></div>
+                  </div>
+                </div>
+              </div>
+             <!-- Team Member 6 -->
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-0 shadow">
+                  <img src="pic.png" height="250" class="card-img-top" alt="...">
+                  <div class="card-body text-center">
+                    <h5 class="card-title mb-0">Jaxin Cabral-Mahlum</h5>
+                    <div class="card-text text-black-50"></div>
+                  </div>
+                </div>
+              </div>
+                           <!-- Ethan -->
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-0 shadow">
+                  <img src="Ethan.jpg" height="280" class="card-img-top" alt="...">
+                  <div class="card-body text-center">
+                    <h5 class="card-title mb-0">Ethan Zhou</h5>
+                    <div class="card-text text-black-50"> Instructor :D </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /.row -->
+          </div>
+        </section>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Circuit-Breakers 2022</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
